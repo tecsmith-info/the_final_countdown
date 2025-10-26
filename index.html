@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+
+	Designed by : Tom Smith
+	Name        : Under Construction Countdown.     
+	Description : A Simple Yet Professional Looking Website Timer.
+	
+	Version     : 1.4.1
+	Released    : 06.06.2006
+	Updated     : 09.06.2017
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<script language="Javascript" type="text/javascript" src="js/jquery-1.4.1.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/misc.js"></script>
+	<link rel="Stylesheet" type="text/css" href="style/main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Coming Soon!</title>
+</head>
+<body>
+<div id="container">
+
+		<h1>UNDER CONSTRUCTION</h1>
+		<h2 class="subtitle">...WE WILL BE OFFICIALLY ONLINE IN...</h2>
+
+		<!-- Countdown dashboard start -->
+		<div id="countdown_dashboard">
+			<div class="dash weeks_dash">
+				<span class="dash_title">weeks</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash days_dash">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+		</div>
+		<!-- Countdown dashboard end -->
+
+		<div class="dev_comment">
+		  <h3>Thank you for visiting!</h3>
+		  <p>We regret to inform you that this website is currently unavailable.<br />
+		    If you would like to receive an e-mail when the count-down timer reaches zero,<br />
+		    Please input your e-mail address below...		  </p>
+  </div>
+
+<div class="subscribe">
+			<form action="mailer.php" method="POST" id="subscribe_form">
+				<input type="text" name="email" id="email_field" class="faded" value="your@email.com" /> <input type="submit" id="subscribe_button" value="Notify Me!" />
+			</form>
+		</div>
+        
+		<div class="copyright" align="center">
+          		<p>WE ARE POWERED BY: <a href="http://TECSmith.uk/" target="_blank">TECSMITH</a><br />
+          			OUR WEB DESIGNER IS: <a href="http://me.tecsmith.info/" target="_blank">T.SMITH</a>.</p>
+		</div>
+
+		<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		01,
+						'month': 	12,
+						'year': 	2017,
+						'hour': 	12,
+						'min': 		0,
+						'sec': 		0
+					}
+				});
+			});
+		</script>
+</div>
+</body>
+</html>
